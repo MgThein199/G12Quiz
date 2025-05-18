@@ -3539,14 +3539,6 @@ else if (document.getElementById('quiz-screen').style.display === 'block') {
 };
 window.handleBackPress = handleBackPress;
 
-function openSettings() {
-    if (window.Android && window.Android.openSettings) {
-        window.Android.openSettings();  // Calling Java method to open Settings Activity
-    } else {
-        alert("Settings not available in this environment.");
-    }
-}
-window.openSettings = openSettings;
 
 function exitQuiz(){
     if (window.AndroidBack && window.AndroidBack.showToast) {
